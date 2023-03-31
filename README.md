@@ -8,6 +8,7 @@ Jav Tecno is a static template for a product catalog and a contact form, also la
 ![image](https://user-images.githubusercontent.com/115583767/229183437-5eb8c1fd-772f-4caf-8779-9c61ca5024e0.png)
 ![image](https://user-images.githubusercontent.com/115583767/229183516-8d1aad99-3bc6-4c9b-8e72-147780d1e5ae.png)
 ![image](https://user-images.githubusercontent.com/115583767/229183587-58675015-988c-415b-b323-df513b99ebe3.png)
+![image](https://user-images.githubusercontent.com/115583767/229184354-b68ef6e1-e754-46bc-a90f-0504674d6388.png)
 
 
 
