@@ -94,7 +94,7 @@
                     </div>
                     <!-- Form Contact -->
                     <div class="col-5">
-                        <form id="form_contact" action="#" method="post">
+                        <form id="form_contact" action="contactoRegistro.html" method="get">
                             <h3 class="title_contact">Let's Talk</h3>
                             <h5>Fill in this form or send us an email with your inquiry.</h5>
                             <!-- Inputs -->
@@ -111,15 +111,17 @@
                             <!-- Input / Value Selection -->
                             <div class="mb-3">
                                 <label for="txtcontact" class="form-label modal_text">Customer Type</label>
-                                <div>
-                                    <input type="checkbox" class="form-check-input modal_text" id="txtcheckbox"
-                                        name="txtcheckbox" required>
-                                    <label class="form-check-label modal_text" for="txtcheckbox">Person</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      Person
+                                    </label>
                                 </div>
-                                <div>
-                                    <input type="checkbox" class="form-check-input modal_text" id="txtcheckbox2"
-                                        name="txtcheckbox2" required>
-                                    <label class="form-check-label modal_text" for="txtcheckbox2">Compañy</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                      Compañy
+                                    </label>
                                 </div>
                             </div>
                             <div class="mb-3">
@@ -160,6 +162,29 @@
                 </div>
             </div>
         </section>
+        <!-- Maps -->
+        <section id="maps">
+            <div class="container">
+                <div class="row d-flex justify-content-center align-items-center py-5">
+                    <div class="col-lg-5">
+                        <div class="container">
+                            <div class="row">
+                                <h2 class="text-white fw-bold">Direcci&oacute;n:</h2>
+                                <h3 class="text-white">Av. Proceres Independencia 2758.</h1>
+                                    <h2 class="text-white fw-bold">Tel&eacute;fono:</h2>
+                                    <h3 class="text-white">5280125 / 940108903</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.166386023514!2d-77.06920650898434!3d-11.962979536215048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce30170cd08b%3A0x32d56ab9c93b9326!2sTottus!5e0!3m2!1ses!2spe!4v1680277494590!5m2!1ses!2spe"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Icons Wsp -->
         <section id="wsp">
             <div class="container">
@@ -177,7 +202,7 @@
         <section id="footer">
             <div class="container">
                 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                    <p class="col-md-4 mb-0 text-muted">© 2022 Copyright, Jav Tecno</p>
+                    <p class="col-md-4 mb-0 text-muted">© 2022 Copyright, Javier Paredes</p>
                     <a href="/"
                         class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                         <img src="public/img/logo.png" alt="" class="img-fluid img_logo">

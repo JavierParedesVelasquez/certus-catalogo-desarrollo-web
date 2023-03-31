@@ -1,127 +1,132 @@
 /*  GENERAL
 ============*/
-body {/*El cuerpo del proyecto*/
-  font-family: "Bona Nova", serif !important;/*Tipografia*/
-  text-decoration: none;/*Quita decoracion de texto*/
+body {
+  /*El cuerpo del proyecto*/
+  font-family: "Bona Nova", serif !important; /*Tipografia*/
+  text-decoration: none; /*Quita decoracion de texto*/
 }
 /* ROOT */
 /*Estilos predeterminados de boostrap cambiandolos para los requerimientos del proyecto*/
 /*Se le pone el import para que tome precedencia sobre otras reglas de estilos */
 .btn-outline-secondary {
-  --bs-btn-border-color: #0b2143 !important;/*Borde boton*/
-  --bs-btn-color: #0b2143 !important;/*Color boton*/
-  --bs-btn-hover-bg: #0b2143 !important;/*Hover boton*/
-  --bs-btn-hover-border-color: #0b2143 !important;/*Border boton*/
+  --bs-btn-border-color: #0b2143 !important; /*Borde boton*/
+  --bs-btn-color: #0b2143 !important; /*Color boton*/
+  --bs-btn-hover-bg: #0b2143 !important; /*Hover boton*/
+  --bs-btn-hover-border-color: #0b2143 !important; /*Border boton*/
 }
 .btn-outline-primary {
-  --bs-btn-border-color: #0b2143 !important;/*Borde boton*/
-  --bs-btn-color: #0b2143 !important;/*Color boton*/
-  --bs-btn-hover-bg: #0b2143 !important;/*Hover boton*/
-  --bs-btn-hover-border-color: #0b2143 !important;/*Hover Border boton*/
+  --bs-btn-border-color: #0b2143 !important; /*Borde boton*/
+  --bs-btn-color: #0b2143 !important; /*Color boton*/
+  --bs-btn-hover-bg: #0b2143 !important; /*Hover boton*/
+  --bs-btn-hover-border-color: #0b2143 !important; /*Hover Border boton*/
 }
 .btn-primary {
-  --bs-btn-bg: #0b2143 !important;/*Color texto boton*/
-  --bs-btn-border-color: #0b2143 !important;/*Border boton*/
-  --bs-btn-hover-color: #0b2143 !important;/*Hover boton*/
-  --bs-btn-hover-bg: #ffff !important;/*Hover color texto*/
-  --bs-btn-hover-border-color: #0b2143 !important;/*Hover Borde Color*/
-  --bs-btn-active-bg: #0b2143 !important;/*Activo de boton*/
-  --bs-btn-active-border-color: #0b2143 !important;/*Active Borde Color*/
-  --bs-btn-disabled-bg: #0b2143 !important;/*Color de boton desactivado*/
-  --bs-btn-disabled-border-color: #0b2143 !important;/*Border color de boton desactivado*/
+  --bs-btn-bg: #0b2143 !important; /*Color texto boton*/
+  --bs-btn-border-color: #0b2143 !important; /*Border boton*/
+  --bs-btn-hover-color: #0b2143 !important; /*Hover boton*/
+  --bs-btn-hover-bg: #ffff !important; /*Hover color texto*/
+  --bs-btn-hover-border-color: #0b2143 !important; /*Hover Borde Color*/
+  --bs-btn-active-bg: #0b2143 !important; /*Activo de boton*/
+  --bs-btn-active-border-color: #0b2143 !important; /*Active Borde Color*/
+  --bs-btn-disabled-bg: #0b2143 !important; /*Color de boton desactivado*/
+  --bs-btn-disabled-border-color: #0b2143 !important; /*Border color de boton desactivado*/
 }
 .accordion {
-  --bs-accordion-color: #0b2143 !important;
+  --bs-accordion-color: #0b2143 !important; /*color acordion*/
 }
 .accordion-button:not(.collapsed) {
-  color: #fff !important;
-  --bs-accordion-active-color: #0b2143 !important;
-  --bs-accordion-btn-color: #0b2143 !important;
-  background-color: #0b2143 !important;
+  color: #fff !important; /*color texto*/
+  --bs-accordion-active-color: #0b2143 !important; /*active color acordion*/
+  --bs-accordion-btn-color: #0b2143 !important; /*color acordion*/
+  background-color: #0b2143 !important; /*fondo color*/
 }
 .accordion-button:not(.collapsed)::after {
-  color: #fff !important;
+  color: #fff !important; /*color texto*/
 }
 .nav_start {
-  font-size: 1.5em !important;
-  color: #0b2143 !important;
+  font-size: 1.5em !important; /*tamaño de texto*/
+  color: #0b2143 !important; /*color de texto*/
 }
 /* HEADER
 ===========*/
 #header {
-  background-color: #fff !important;/*Color de fondo*/
-  height: 85px;/*Altura*/
+  background-color: #fff !important; /*Color de fondo*/
+  height: 85px; /*Altura*/
 }
 .img_logo {
-  width: 56px;/*Ancho de la imagen*/
-  height: 56px;/*Altura de la imagen*/
+  width: 56px; /*Ancho de la imagen*/
+  height: 56px; /*Altura de la imagen*/
 }
 .navbar_one {
-  background-color: #fff !important;/*Color de fondo*/
-  padding-top: 50px;/*padding arriba 50 pixeles*/
+  background-color: #fff !important; /*Color de fondo*/
+  padding-top: 50px; /*padding arriba 50 pixeles*/
 }
 .navbar-brand {
-  margin-right: 0 !important;/*margin derecha 0 pixeles*/
+  margin-right: 0 !important; /*margin derecha 0 pixeles*/
 }
 .cart_icon {
-  color: #0b2143 !important;/*color de texto*/
-  font-size: 2rem;/*tamaño de texto*/
-  padding-right: 1rem;/*padding derecha 1rem de tamaño*/
+  color: #0b2143 !important; /*color de texto*/
+  font-size: 2rem; /*tamaño de texto*/
+  padding-right: 1rem; /*padding derecha 1rem de tamaño*/
 }
 .nav-link:hover {
-  color: #0b2143 !important;/*color de texto*/
+  color: #0b2143 !important; /*color de texto*/
 }
 .active {
-  color: #0b2143 !important;/*color de texto*/
+  color: #0b2143 !important; /*color de texto*/
 }
 .dropdown-menu {
-  border: none !important;/*propiedad de border anulada*/
+  border: none !important; /*propiedad de border anulada*/
 }
 .form-control {
-  border: 1px solid #0b2143 !important;/*borde tamaño 1 pixel, modo solido y color*/
+  border: 1px solid #0b2143 !important; /*borde tamaño 1 pixel, modo solido y color*/
 }
 /*  SUB CONTENT
 ================ */
 .sub_content {
-  display: flex;/*flexbox*/
-  justify-content: center;/*centrado horizontalmente*/
-  color: #fa0e0e;/*color de texto*/
-  text-align: center;/*texto centrado*/
+  display: flex; /*flexbox*/
+  justify-content: center; /*centrado horizontalmente*/
+  color: #fa0e0e; /*color de texto*/
+  text-align: center; /*texto centrado*/
 }
 .sub_p_content {
-  border: 2px solid #fa0e0e;/*borde de tamaño 2 pixel, tipo solido, color */
-  border-radius: 80px 20px 80px 20px;/*border dedondeado con tamaños diferentes en las esquinas */
-  padding: 0.6rem;/*padding en todos los lados*/
+  border: 2px solid #fa0e0e; /*borde de tamaño 2 pixel, tipo solido, color */
+  border-radius: 80px 20px 80px 20px; /*border dedondeado con tamaños diferentes en las esquinas */
+  padding: 0.6rem; /*padding en todos los lados*/
 }
 /*  SECCION Characteristics
 =============================*/
 .d_flex_iconos {
-  display: flex;/*flexbox*/
-  text-align: initial;/*texto propiedad*/
-  width: 100%;/*todo el ancho*/
-  margin: auto;/*margin auto, sirve para centrar el margen*/
+  display: flex; /*flexbox*/
+  text-align: initial; /*texto propiedad*/
+  width: 100%; /*todo el ancho*/
+  margin: auto; /*margin auto, sirve para centrar el margen*/
 }
 .row_1 {
-  background-color: #0b2143;/*color de fondo*/
+  background-color: #0b2143; /*color de fondo*/
 }
 .col_p_span p {
-  color: #fff;/*color de texto*/
+  color: #fff; /*color de texto*/
 }
 .col_span {
-  color: #fff;/*color de texto*/
+  color: #fff; /*color de texto*/
 }
 .col_i i {
-  color: #fff;/*color de texto*/
-  font-size: 3rem;/*tamaño de texto*/
+  color: #fff; /*color de texto*/
+  font-size: 3rem; /*tamaño de texto*/
 }
 .py_row_1 {
-  padding: 34px 10px !important;/*padding con 2 tamaños, el primero va arriba y abajo y el 10 va a los costados*/
-  border-radius: 20px;/*border redondeado de 20 pixeles*/
+  padding: 34px 10px !important; /*padding con 2 tamaños, el primero va arriba y abajo y el 10 va a los costados*/
+  border-radius: 20px; /*border redondeado de 20 pixeles*/
 }
 /*  SECCION VIDEOS
 =====================*/
 #videos {
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);/*color de fondo gradients*/
+  background-image: linear-gradient(
+    to top,
+    #09203f 0%,
+    #537895 100%
+  ); /*color de fondo gradients*/
 }
 /*  SECCION CONTACT
 =====================*/
@@ -131,79 +136,93 @@ body {/*El cuerpo del proyecto*/
     rgba(255, 255, 255, 0) 68.23%,
     #0b2143 97.92%
   );
-  padding-bottom: 50px;/*color de fondo gradients*/
+  padding-bottom: 50px; /*color de fondo gradients*/
 }
 #form_contact {
-  border-radius: 15px !important;/*border redondeado de 15 pixeles*/
-  border: 1px solid #0b2143;/*borde de tamaño 1 pixel, tipo solido, color*/
-  padding: 20px 30px;/*padding de tamaño arriba abajo 20 pixeles, a los lados 30 pixeles*/
-  background-color: #fff;/*color de fondo*/
+  border-radius: 15px !important; /*border redondeado de 15 pixeles*/
+  border: 1px solid #0b2143; /*borde de tamaño 1 pixel, tipo solido, color*/
+  padding: 20px 30px; /*padding de tamaño arriba abajo 20 pixeles, a los lados 30 pixeles*/
+  background-color: #fff; /*color de fondo*/
 }
 /*  SECCION RECOMENDACIONES
 =============================*/
 .text_sub {
-  font-size: 1.5rem;/*tamaño de texto*/
-  color: #0b2143;/*color de texto*/
+  font-size: 1.5rem; /*tamaño de texto*/
+  color: #0b2143; /*color de texto*/
 }
 .dropdown-item:hover {
-  color: #0b2143 !important;/*color de texto*/
+  color: #0b2143 !important; /*color de texto*/
 }
 .dropdown-item:focus,
 .dropdown-item:hover {
-  background: #fff !important;/*color de fondo*/
+  background: #fff !important; /*color de fondo*/
 }
 .card {
-  box-shadow: 0 2px 10px rgb(10 5 5 / 30%);/*sombra de caja*/
+  box-shadow: 0 2px 10px rgb(10 5 5 / 30%); /*sombra de caja*/
 }
 /*      SECCION MODAL
 =============================*/
 .input-group {
-  border: 1px solid #0b2143 !important;/*borde de tamaño 1 pixel, tipo solido , color*/
-  border-radius: 0.375rem !important;/*borde redondeo*/
+  border: 1px solid #0b2143 !important; /*borde de tamaño 1 pixel, tipo solido , color*/
+  border-radius: 0.375rem !important; /*borde redondeo*/
 }
 .modal_login_icon {
-  margin: 0;/*margin 0*/
-  font-size: 4rem;/*tamaño de texto*/
-  display: flex;/*flexbox*/
-  justify-content: center;/*justificado el contenido para el centro*/
-  color: #0b2143 !important;/*color de texto*/
+  margin: 0; /*margin 0*/
+  font-size: 4rem; /*tamaño de texto*/
+  display: flex; /*flexbox*/
+  justify-content: center; /*justificado el contenido para el centro*/
+  color: #0b2143 !important; /*color de texto*/
 }
 .modal-title {
-  font-family: "Calistoga", cursive;/*Tipo de letra*/
-  color: #0b2143 !important;/*color de texto*/
+  font-family: "Calistoga", cursive; /*Tipo de letra*/
+  color: #0b2143 !important; /*color de texto*/
 }
 .modal_text {
-  color: #0b2143 !important;/*color de texto*/
+  color: #0b2143 !important; /*color de texto*/
 }
 /*  BUTTON WSP
 ================== */
 .btn_wsp {
-  position: fixed;/*propiedad posicion fixed, siempre permanece en el mismo lugar*/
-  width: 55px;/*ancho*/
-  height: 55px;/*alto*/
-  line-height: 55px;/*altura de un cuadro de linea */
-  bottom: 33px;/*abajo 33 pixeles*/
-  right: 30px;/*derecha 33 pixeles*/
-  background: #0df053;/*color de fondo*/
-  color: #fff;/*color de texto*/
-  border-radius: 50px;/*borde redondeado*/
-  text-align: center;/*texto centrado*/
-  font-size: 30px;/*tamaño de texto*/
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);/*sobreado*/
-  z-index: 100;/*Orden o posicionamiento de un elemento*/
+  position: fixed; /*propiedad posicion fixed, siempre permanece en el mismo lugar*/
+  width: 55px; /*ancho*/
+  height: 55px; /*alto*/
+  line-height: 55px; /*altura de un cuadro de linea */
+  bottom: 33px; /*abajo 33 pixeles*/
+  right: 30px; /*derecha 33 pixeles*/
+  background: #0df053; /*color de fondo*/
+  color: #fff; /*color de texto*/
+  border-radius: 50px; /*borde redondeado*/
+  text-align: center; /*texto centrado*/
+  font-size: 30px; /*tamaño de texto*/
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3); /*sobreado*/
+  z-index: 100; /*Orden o posicionamiento de un elemento*/
 }
 .btn_wsp:hover {
-  background: #fff;/*color de fondo*/
-  color: #0df053;/*color de texto*/
+  background: #fff; /*color de fondo*/
+  color: #0df053; /*color de texto*/
+}
+/*    Maps
+===============*/
+#maps {
+  background-color: #0b2143;/*color de fondo*/
+}
+/*  Alert Message Contact
+==========================*/
+.btn_regresar {
+  text-decoration: none;/*quitar decoraciones*/
+  color: #0b2143 !important;/*color de texto*/
+}
+.btn_regresar:hover{
+  color: #fff !important;/*color de texto*/
 }
 
 /* Media Responsive
 =================== */
 @media (max-width: 420px) {
   .d_flex_iconos {
-    display: flex;/*flexbox*/
-    align-items: center;/*centrar verticalmente*/
-    text-align: inherit;/*establece la alineacion horizontalmente*/
-    margin-bottom: 18px;/*espacio abajo del contenedor 18 pixeles*/
+    display: flex; /*flexbox*/
+    align-items: center; /*centrar verticalmente*/
+    text-align: inherit; /*establece la alineacion horizontalmente*/
+    margin-bottom: 18px; /*espacio abajo del contenedor 18 pixeles*/
   }
 }
