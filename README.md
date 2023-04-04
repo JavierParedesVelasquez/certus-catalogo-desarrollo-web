@@ -1,5 +1,5 @@
 # certus-catalogo-desarrollo-web
-Trabajo parcial de certus - diseñar un proyecto web que tenga un catalogo de productos y un formulario de contacto.
+Partial job for certus - design a web project that has a product catalog and a contact form.
 Introduction
 Jav Tecno is a static template for a product catalog and a contact form, also later 2 modals were implemented, one for login and one for registration, based on the Bootstrap v5.2 framework, made for being a qualified practice of CERTUS scoring certain aspects of courtship that have to be fulfilled.
 ![image](https://user-images.githubusercontent.com/115583767/229183147-544f4a41-dc8c-495f-bb7b-92c809eecb21.png)
