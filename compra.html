@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="public/img/logo.png">
     <!-- CSS -->
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/spinner.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +19,8 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Title Page -->
-    <title>Contact</title>
+    <!-- Title Page-->
+    <title>Compra de Producto</title>
 </head>
 
 <body>
@@ -39,7 +40,7 @@
                     <!-- Navegation -->
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-3">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
@@ -62,7 +63,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -76,111 +77,116 @@
                             type="button">Register</button>
                     </ul>
                     <ul class="d-flex justify-content-center align-items-center m-0 p-0">
-                        <i class='bx bx-cart-alt cart_icon'></i>
+                        <a data-bs-toggle="modal" data-bs-target="#carShopping">
+                            <!-- Variable del carrito contenedor -->
+                            <i class='bx bx-cart-alt' id="carritoContenedor">0</i>
+                        </a>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <!-- Main Part-->
-    <main>
-        <!-- Contact -->
-        <section id="contact">
-            <div class="container-fluid">
-                <div class="row">
-                    <!-- Image Contact -->
-                    <div class="col-5 d-flex justify-content-center align-items-center">
-                        <img src="public/img/img_1.png" class="img-fluid" alt="">
-                    </div>
-                    <!-- Form Contact -->
-                    <div class="col-5">
-                        <form id="form_contact" action="contactoRegistro.html" method="get">
-                            <h3 class="title_contact">Let's Talk</h3>
-                            <h5>Fill in this form or send us an email with your inquiry.</h5>
-                            <!-- Inputs -->
-                            <div class="mb-3">
-                                <label for="txtname" class="form-label modal_text">Name</label>
-                                <input type="text" class="form-control" id="txtname" aria-describedby="emailHelp"
-                                    placeholder="Enter Name" autocomplete="off" maxlength="50" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="txtemail" class="form-label modal_text">Email address</label>
-                                <input type="email" class="form-control" id="txtemail" aria-describedby="emailHelp"
-                                    placeholder="Enter Email" autocomplete="off" required>
-                            </div>
-                            <!-- Input / Value Selection -->
-                            <div class="mb-3">
-                                <label for="txtcontact" class="form-label modal_text">Customer Type</label>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                      Person
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                      Compañy
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="txtcoment" class="form-label modal_text">Coment</label>
-                                <textarea rows="3" cols="30" type="text" id="txtcoment" name="txtcoment"
-                                    class="form-control" placeholder="Enter Coment"></textarea>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button type="submit" class="btn btn-primary">Send</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-2 m-auto">
-                        <!-- Icons Social -->
-                        <div class="icons_contact d-grid justify-content-center align-items-center gap-3">
-                            <div class="col">
-                                <a href="#">
-                                    <i class='bx bxl-facebook-square cart_icon'></i>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="#">
-                                    <i class='bx bxl-instagram cart_icon'></i>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="#">
-                                    <i class='bx bxl-twitter cart_icon'></i>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="#">
-                                    <i class='bx bxl-youtube cart_icon'></i>
-                                </a>
-                            </div>
-                        </div>
+    <!-- Modal Car Shopping -->
+    <div class="modal fade" id="carShopping" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Shopping Cart</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-grid justify-content-center">
+
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-sm btn-danger" id="vaciarCarrito">Vaciar Carrito <i
+                            class='bx bx-trash'></i></button>
+                    <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close <i
+                            class='bx bx-window-close'></i></button>
+                    <button type="button" class="btn btn-sm btn-primary" id="procesarCompra">Continuar compra <i
+                            class='bx bxl-shopify'></i></button>
+                    <div>
+                        <span class="fw-bold text_precio">Precio total:</span>
+                        <p class="text-center number_precio" id="precioTotal"></p>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Maps -->
-        <section id="maps">
+        </div>
+    </div>
+    <!-- Button activarFuncion -->
+    <button id="activarFuncion" class="btn btn-secondary boton mt-2">¡Click!</button>
+    <!-- Main -->
+    <main>
+        <!-- Section Compra -->
+        <section id="section_compra">
             <div class="container">
-                <div class="row d-flex justify-content-center align-items-center py-5">
-                    <div class="col-lg-5">
-                        <div class="container">
-                            <div class="row">
-                                <h2 class="text-white fw-bold">Direcci&oacute;n:</h2>
-                                <h3 class="text-white">Av. Proceres Independencia 2758.</h1>
-                                    <h2 class="text-white fw-bold">Tel&eacute;fono:</h2>
-                                    <h3 class="text-white">5280125 / 940108903</h1>
+                <div class="row mt-3">
+                    <div class="col">
+                        <article class="arcticle__compra">
+                            <h2 class="d-flex justify-content-center mb-3 title_shopping">Realizar Compra</h2>
+                            <!-- Formulario -->
+                            <form id="procesar-pago" method="POST">
+                                <div class="form-group row py-3">
+                                    <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
+                                    <div class="col-12 col-md-10">
+                                        <input type="text" class="form-control" id="txtcliente"
+                                            placeholder="Ingresa nombre cliente" name="persona">
+                                    </div>
+                                </div>
+                                <div class="form-group row py-3">
+                                    <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
+                                    <div class="col-12 col-md-10">
+                                        <input type="email" id="txtcorreo" class="form-control" name="email.id"
+                                            id="email.id" placeholder="Ingresar Correo Electronico">
+                                    </div>
+                                </div>
+                        </article>
+                        <div id="carrito" class="form-group table-responsive">
+                            <!-- Tabla -->
+                            <table class="table" id="lista-compra">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Sub Total</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right">TOTAL
+                                        <p id="totalProceso"></p>
+                                    </th>
+                                    <!-- <th scope="col"></th> -->
+                                </tr>
+
+                            </table>
+                        </div>
+
+                        <!-- Spinner -->
+                        <div class="row d-flex justify-content-center d-none" id="spinner">
+                            <div>
+                                <div class="spinner">
+                                    <div class="cube1"></div>
+                                    <div class="cube2"></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.166386023514!2d-77.06920650898434!3d-11.962979536215048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce30170cd08b%3A0x32d56ab9c93b9326!2sTottus!5e0!3m2!1ses!2spe!4v1680277494590!5m2!1ses!2spe"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!-- Botones -->
+                        <div class="row justify-content-between">
+                            <div class="col-md-4 mb-2">
+                                <a href="index.html" class="btn btn-primary"><i class='bx bxs-left-arrow-circle'></i>
+                                    Seguir
+                                    comprando</a>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <input type="submit" class="btn btn-danger" id="button" value="Finalizar compra">
+                            </div>
+                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -229,7 +235,7 @@
                             <i class='bx bxs-user-circle'></i>
                         </p>
                         <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">WELCOME</h1>
-                        <form action="access.php" method="POST">
+                        <form action="#" method="POST">
                             <!-- Inputs -->
                             <div class="mb-3">
                                 <label for="txtemail" class="form-label modal_text">Email address</label>
@@ -264,13 +270,13 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5 text-center">Register</h1>
+                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Register</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body px-5">
-                        <h1 class="modal-title fs-5 text-start">Hello!</h1>
+                        <h1 class="modal-title fs-5 text-start" id="exampleModalLabel">Hello!</h1>
                         <p class="modal_text fw-bold">Create a new account.</p>
-                        <form action="access.php" method="POST">
+                        <form action="#" method="POST">
                             <!-- Inputs-->
                             <div class="mb-3">
                                 <label for="txtname" class="form-label modal_text">Name</label>
@@ -279,49 +285,49 @@
                             </div>
                             <div class="mb-3">
                                 <label for="txtlastname" class="form-label modal_text">Last Name</label>
-                                <input type="text" class="form-control" aria-describedby="emailHelp"
+                                <input type="text" class="form-control" id="txtlastname" aria-describedby="emailHelp"
                                     placeholder="Enter Last Name" autocomplete="off" maxlength="54" required>
                             </div>
                             <div class="mb-3">
                                 <label for="txtemail" class="form-label modal_text">Email address</label>
-                                <input type="email" class="form-control" aria-describedby="emailHelp"
+                                <input type="email" class="form-control" id="txtemail" aria-describedby="emailHelp"
                                     placeholder="Enter Email" autocomplete="off" required>
                             </div>
                             <div class="mb-3">
                                 <label for="txtcontact" class="form-label modal_text">Phone</label>
-                                <input type="number" class="form-control" placeholder="Enter Contact"
+                                <input type="number" class="form-control" id="txtcontact" placeholder="Enter Contact"
                                     maxlength="13" minlength="7" autocomplete="off" required>
                             </div>
                             <!-- Input / Value Selection -->
                             <div class="input-group mb-3">
                                 <label class="input-group-text" for="inputGroupSelect01">Telephone Operator</label>
-                                <select class="form-select">
+                                <select class="form-select" id="inputGroupSelect01">
                                     <option selected>Choose...</option>
                                     <option value="1">Claro</option>
                                     <option value="2">Movistar</option>
                                     <option value="3">Entel</option>
-                                    <option value="3">Bitel</option>
+                                    <option value="4">Bitel</option>
                                 </select>
                             </div>
                             <div class="mb-3">
                                 <label for="txtpass" class="form-label modal_text">Password</label>
-                                <input type="password" class="form-control" placeholder="Enter Password"
+                                <input type="password" class="form-control" id="txtpass" placeholder="Enter Password"
                                     autocomplete="off" required>
                             </div>
                             <div class="mb-3">
                                 <label for="txtcoment" class="form-label modal_text">Coment</label>
-                                <textarea rows="3" cols="30" type="text" name="txtcoment"
+                                <textarea rows="3" cols="30" type="text" id="txtcoment" name="txtcoment"
                                     class="form-control" placeholder="Enter Coment"></textarea>
                             </div>
                             <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input modal_text"
+                                <input type="checkbox" class="form-check-input modal_text" id="txtcheckbox"
                                     name="txtcheckbox" required>
                                 <label class="form-check-label modal_text" for="txtcheckbox">I have read and accept
                                     the terms and
                                     conditions.</label>
                             </div>
                             <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input modal_text"
+                                <input type="checkbox" class="form-check-input modal_text" id="txtcheckbox2"
                                     name="txtcheckbox2" required>
                                 <label class="form-check-label modal_text" for="txtcheckbox2">I authorize the sending of
                                     publicity.</label>
@@ -336,12 +342,30 @@
             </div>
         </div>
     </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Js Fontawesome -->
     <script src="https://kit.fontawesome.com/34cd624114.js" crossorigin="anonymous"></script>
     <!-- Js Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <!-- Link JS  -->
+    <script src="public/js/main.js"></script>
+    <!-- Link alert CDN -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

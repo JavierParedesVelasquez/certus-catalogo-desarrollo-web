@@ -81,6 +81,11 @@ body {
 .form-control {
   border: 1px solid #0b2143 !important; /*borde tamaño 1 pixel, modo solido y color*/
 }
+.bx-cart-alt{
+  font-size: 1.8rem !important;/*tamaño de icono de carrito de compras*/
+  cursor: pointer !important;/*cursos cambia a manito*/
+  color: #0b2143 !important; /*color de texto*/
+}
 /*  SUB CONTENT
 ================ */
 .sub_content {
@@ -118,6 +123,9 @@ body {
 .py_row_1 {
   padding: 34px 10px !important; /*padding con 2 tamaños, el primero va arriba y abajo y el 10 va a los costados*/
   border-radius: 20px; /*border redondeado de 20 pixeles*/
+}
+.alerta{
+  font-weight: 900 !important;
 }
 /*  SECCION VIDEOS
 =====================*/
@@ -160,6 +168,43 @@ body {
 .card {
   box-shadow: 0 2px 10px rgb(10 5 5 / 30%); /*sombra de caja*/
 }
+.card_h5{
+  height: 66px !important;/*altura*/
+  font-weight: bold;
+  color: #0b2143 !important;
+}
+.card_description{
+  height: 100px !important;/*altura*/
+}
+/*      SECCION  SHOPPING CART
+=============================*/
+.modal-contenedor{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 2px 10px rgb(10 5 5 / 30%);
+}
+.img-carrito{
+  width: 200px;
+  padding: 20px;
+}
+.boton{
+  opacity:0;
+  cursor:no-drop !important;
+}
+.title_shopping{
+  font-size: 2rem; /*tamaño de texto*/
+  color: #fff; /*color de texto*/
+  font-family: "Calistoga", cursive; /*Tipo de letra*/
+}
+.arcticle__compra{
+  background-color: #0b2143 !important;
+  border-radius: 15px;
+  padding: 30px 20px;
+  color: #fff !important;
+  font-style: italic;
+  margin-bottom: 30px !important;
+}
 /*      SECCION MODAL
 =============================*/
 .input-group {
@@ -179,6 +224,18 @@ body {
 }
 .modal_text {
   color: #0b2143 !important; /*color de texto*/
+}
+.parrafo_alert{
+  color: #0b2143 !important; /*color de texto*/
+  font-size: 1.5rem !important;/*tamaño de texto*/
+  font-weight: 900 !important;/*negrita*/
+  font-style: italic !important;/*estilo de texto*/
+}
+.text_precio{
+  color: #0b2143 !important; /*color de texto*/
+}
+.number_precio{
+  color: #fa0e0e !important;
 }
 /*  BUTTON WSP
 ================== */
